@@ -20,3 +20,7 @@
 .wrapper p,.wrapper p > a{
     font-size: 19px;
 }
+
+small{
+    color: red;
+}

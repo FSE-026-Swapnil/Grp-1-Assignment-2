@@ -9,7 +9,10 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isOwner, setIsOwner] = useState(false);
   const [isAgent, setIsAgent] = useState(false);
+  const [emailValid, setEmailValid] = useState(true);
+  const [passwordValid, setPasswordValid] = useState(true);
   const [customerType, setCustomerType] = useState('');
+  const [message, setMessage] = useState('');
   const emailRef = useRef('');
   const passRef = useRef('');
   const nameRef = useRef('');
@@ -29,7 +32,16 @@ const Login = () => {
     setIsLogin(true);
     emailRef.current.value ='';
     passRef.current.value = '';
+    setMessage('');
   };
+
+  const showMessage = () => {
+    setMessage('Password length should be more than 3 characters.');
+  }
+
+  const hideMessage = () => {
+    setMessage('');
+  }
 
   const optionHandler = (event) => {
     if (event.target.value === "Restaurant Owner") {
@@ -47,8 +59,23 @@ const Login = () => {
     }
   };
 
-  const submitHandler = (event) => {
+  const validateFormInputs = (event) => {
     event.preventDefault();
+    //let emailValid = emailRef.current.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,3})$/i);
+    let passwordValid = passRef.current.value.length >= 4;
+   
+    if(passwordValid){
+      setPasswordValid(true);
+    }else if(!passwordValid){
+      toast.warn("Please enter valid password.Password length should be more than 3 characters.");
+    }
+
+    if(passwordValid){
+      submitHandler();
+    }
+  }
+
+  const submitHandler = (event) => {
     let userData = {
       email : emailRef.current.value,
       password : passRef.current.value
@@ -83,24 +110,24 @@ const Login = () => {
           if(resp[0].password === passRef.current.value){
             toast.success("Logged in successfully.");
           }else{
-            toast.error("Invalid credentials.");
+            toast.error("Invalid credentials. Email or password does not match.");
           }
         }else{
-          toast.warn("Please enter valid credentials.");
+          toast.warn("User does not exists.");
         }
       });
     }else{
-      // Sign Up
-      fetch(BASE_URL + 'users', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(userData)
-      }).then((response) => {
-        toast.success('Hurray!!! Registration completed.');
-      });
-    }
+      // Sign Up 
+        fetch(BASE_URL + 'users', {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(userData)
+        }).then((response) => {
+          toast.success('Hurray!!! Registration completed.');
+        });
+      }
   };
 
   return (
@@ -109,7 +136,7 @@ const Login = () => {
         {isLogin ? <h1>Sign In</h1> : <h1>Register</h1>}
       </div>
       <div className="card-body">
-        <form onSubmit={submitHandler}>
+        <form onSubmit={validateFormInputs}>
           <div className="mb-3">
             <label>Email address</label>
             <input
@@ -127,7 +154,10 @@ const Login = () => {
               className="form-control"
               placeholder="Enter password"
               ref={passRef}
+              onFocus={showMessage}
+              onBlur={hideMessage}
             />
+            { !isLogin && message && <small>{message}</small> }
           </div>
 
           { !isLogin &&  
