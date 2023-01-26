@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "sk@yopmail.com",
+      "password": "sk123",
+      "id": 1
+    },
+    {
+      "email": "sk1@yopmail.com",
+      "password": "sk123",
+      "id": 2
+    },
+    {
+      "email": "swapikhande@cmail.com",
+      "password": "sk123",
+      "id": 3
+    },
+    {
+      "email": "new@yopmail.com",
+      "password": "sk123",
+      "id": 4
+    },
+    {
+      "email": "ss@gmail.com",
+      "password": "ss",
+      "id": 5
+    },
+    {
+      "email": "ssk@gmail.com",
+      "password": "ssk",
+      "id": 6
+    }
+  ]
+}

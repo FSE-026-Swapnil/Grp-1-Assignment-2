@@ -16,3 +16,7 @@
     font-weight: bolder;
     color: whitesmoke;
 }
+
+.wrapper p,.wrapper p > a{
+    font-size: 19px;
+}
