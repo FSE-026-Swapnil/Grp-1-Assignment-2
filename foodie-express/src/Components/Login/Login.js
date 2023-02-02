@@ -2,15 +2,15 @@ import react, { useState, useRef } from "react";
 import "./Login.css";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
 import { BASE_URL } from '../../Constants/APIConstants'
+import { setUserSession } from "../Common/Common";
+import { useNavigate } from "react-router-dom"
 
 const Login = () => {
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
   const [isOwner, setIsOwner] = useState(false);
   const [isAgent, setIsAgent] = useState(false);
-  const [emailValid, setEmailValid] = useState(true);
-  const [passwordValid, setPasswordValid] = useState(true);
   const [customerType, setCustomerType] = useState('');
   const [message, setMessage] = useState('');
   const emailRef = useRef('');
@@ -64,9 +64,7 @@ const Login = () => {
     //let emailValid = emailRef.current.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,3})$/i);
     let passwordValid = passRef.current.value.length >= 4;
    
-    if(passwordValid){
-      setPasswordValid(true);
-    }else if(!passwordValid){
+    if(!passwordValid){
       toast.warn("Please enter valid password.Password length should be more than 3 characters.");
     }
 
@@ -108,7 +106,9 @@ const Login = () => {
         console.log(resp);
         if(resp.length > 0){
           if(resp[0].password === passRef.current.value){
+            setUserSession(resp[0].id, resp[0].email);
             toast.success("Logged in successfully.");
+            navigate(`/dashboard`);
           }else{
             toast.error("Invalid credentials. Email or password does not match.");
           }

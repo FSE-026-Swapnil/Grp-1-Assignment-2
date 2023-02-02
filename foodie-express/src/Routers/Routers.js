@@ -1,7 +1,9 @@
 import React from "react"
 import { Routes,Route } from "react-router-dom";
+import Dashboard from "../Components/Dashboard/Dashboard";
 import Homepage from "../Components/Homepage/Homepage";
 import Login from "../Components/Login/Login";
+import SearchRestaurant from "../Components/SearchRestaurant/SearchRestaurant";
 
 const Routers = () => {
 //   let isAuthenticated=true;
@@ -11,6 +13,8 @@ const Routers = () => {
     <Routes>
       <Route exact path="/" element={<Homepage />} />
       <Route path="/login" element={<Login />}  />
+      <Route path="/dashboard" element={<Dashboard />}  />
+      <Route path="search" element={<SearchRestaurant />} />
       {/* <Route path="/About" component={About} />
       <Route path="/Services" component={Services} />
       <Route path="/Service/:id" component={Service} />
