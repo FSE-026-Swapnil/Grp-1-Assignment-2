@@ -135,7 +135,7 @@ const Login = () => {
 
   return (
     <div className="card wrapper">
-      <div class="card-header">
+      <div className="card-header">
         {isLogin ? <h1>Sign In</h1> : <h1>Register</h1>}
       </div>
       <div className="card-body">
@@ -166,7 +166,7 @@ const Login = () => {
           { !isLogin &&  
           <div className="mb-3">
             <label>Sign up as</label>
-            <select class="form-select" onChange={optionHandler}>
+            <select className="form-select" onChange={optionHandler}>
               <option value="default" selected>Select user type</option>
               <option value="Customer">Customer</option>
               <option value="Restaurant Owner">Restaurant Owner</option>

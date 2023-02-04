@@ -21,9 +21,11 @@ function App() {
     setauthstatus(false);
   }
 
+  const layoutClasses = `${authstatus ? 'dashboard-wrapper' : ''}`;
+
   return (
     <AuthContext.Provider value={{ status: authstatus,login: loggedIn, logout:loggedOut}}>
-      <div class="container-fluid p-0">
+      <div className="container-fluid p-0">
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -38,8 +40,10 @@ function App() {
       />
       <BrowserRouter>
         <Header />
-        {authstatus &&  <Dashboard />}
-        <Routers />
+        <div className={layoutClasses}>
+          {authstatus &&  <Dashboard/>}
+          <Routers className=""/>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

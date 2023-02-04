@@ -16,8 +16,8 @@ const Header = () => {
     
     return(
         <header>
-            <div class="header">
-                <img src={brand} class="brand-logo" width="260" height="80" alt="App Logo" />
+            <div className="header">
+                <img src={brand} className="brand-logo" width="260" height="80" alt="App Logo" />
                 <ul>
                     { !ctx.status && <li><Link to="/login">LOGIN</Link></li> }
                     { ctx.status && <li><Link to="/" onClick={logoutHandler}>LOGOUT</Link></li>}

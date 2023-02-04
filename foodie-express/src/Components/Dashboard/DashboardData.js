@@ -13,7 +13,7 @@ export const DashboardData = [
       },
       {
         title: 'Previous Orders',
-        path: '/completedOrders',
+        path: '/orderHistory',
         icon: <IoIcons.IoIosPaper />,
         cName: 'nav-text'
       },

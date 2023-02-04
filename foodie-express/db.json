@@ -50,5 +50,73 @@
       "password": "sssk",
       "id": 10
     }
+  ],
+  "restaurants":[
+    { 
+      "id":1,
+      "name": "ABC Hotel",
+      "address": "Professor Chowk, Ahmednagar",
+      "bestFor":"North Indian, Italian, Continental, Bar Food, Desserts, Beverages"
+    },
+    { 
+      "id":2,
+      "name": "Sai Hotel",
+      "address": "Savedi, Ahmednagar",
+      "bestFor":"Finger Food, Chinese, Pizza, Italian, North Indian, Desserts"
+    },
+    { 
+      "id":3,
+      "name": "Dominos",
+      "address": "Deccan, Pune",
+      "bestFor":"European, Asian, Continental, Italian, Desserts"
+    },
+    { 
+      "id":4,
+      "name": "KFC",
+      "address": "Kothrud, Pune",
+      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages"
+    },
+    { 
+      "id":5,
+      "name": "Hotel Grand",
+      "address": "Juhu, Mumbai",
+      "bestFor":"Thai, Cantonese, Japanese"
+    },
+    { 
+      "id":6,
+      "name": "Hotel Vaishali",
+      "address": "FC Road, Pune",
+      "bestFor":"Continental, Modern Indian, Asian, Italian, Finger Food, Beverages"
+    },
+    { 
+      "id":7,
+      "name": "Hotel Hyatt",
+      "address": "Dadar, Mumbai",
+      "bestFor":"Cafe, European, Modern Indian, Chinese, Beverages, Desserts"
+    },
+    { 
+      "id":8,
+      "name": "Vitara",
+      "address": "Andheri, Mumbai",
+      "bestFor":"American, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, Desserts"
+    },
+    { 
+      "id":9,
+      "name": "Premdan Hotel",
+      "address": "Churchgate Junction, Mumbai",
+      "bestFor":"Asian, Continental, North Indian, Italian, Mughlai"
+    },
+    { 
+      "id":10,
+      "name": "Singh Residency",
+      "address": "East expressway, Ahmednagar",
+      "bestFor":"Bar Food, North Indian, Kebab, Mughlai, Biryani, Continental, Pizza"
+    },
+    { 
+      "id":11,
+      "name": "Hotel Rajyog",
+      "address": "Hinjewadi, Pune",
+      "bestFor":"Brazilian, Steak, South American, Beverages, Desserts"
+    }
   ]
 }

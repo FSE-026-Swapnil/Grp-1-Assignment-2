@@ -1,8 +1,10 @@
 import React from "react"
 import { Routes,Route } from "react-router-dom";
+import ActiveOrder from "../Components/ActiveOrder/ActiveOrder";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Homepage from "../Components/Homepage/Homepage";
 import Login from "../Components/Login/Login";
+import OrderHistory from "../Components/OrderHistory/OrderHistory";
 import SearchRestaurant from "../Components/SearchRestaurant/SearchRestaurant";
 
 const Routers = () => {
@@ -14,7 +16,9 @@ const Routers = () => {
       <Route exact path="/" element={<Homepage />} />
       <Route path="/login" element={<Login />}  />
       <Route path="/dashboard" element={<Dashboard />}  />
-      <Route path="search" element={<SearchRestaurant />} />
+      <Route path="/search" element={<SearchRestaurant />} />
+      <Route path="/orderHistory" element={<OrderHistory />} />
+      <Route path="/activeOrder" element={<ActiveOrder />} />
       {/* <Route path="/About" component={About} />
       <Route path="/Services" component={Services} />
       <Route path="/Service/:id" component={Service} />

@@ -3,9 +3,9 @@ import './Footer.css'
 
 const Footer = () => {
     return(
-        <footer class="container-fluid p-0">
-            <div class="d-flex justify-content-between p-3">
-                <div class="flex-item">
+        <footer className="container-fluid p-0">
+            <div className="d-flex justify-content-between p-3">
+                <div className="flex-item">
                     <ul>    
                         <label>COMPANY</label>
                         <li>HOME</li>
@@ -15,7 +15,7 @@ const Footer = () => {
                         <li>T & C</li>
                     </ul>
                 </div>
-                <div class="flex-item">
+                <div className="flex-item">
                     <ul>    
                         <label>HELP & SUPPORT</label>
                         <li>CALLBACK REQUEST</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                         <li>CONTACT US</li>
                     </ul>
                 </div>
-                <div class="flex-item">
+                <div className="flex-item">
                     <ul>    
                         <label>PARTNERSHIP</label>
                         <li>RESTAURANT SIGNUP</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <li>T & C</li>
                     </ul>
                 </div>
-                <div class="flex-item">
+                <div className="flex-item">
                     <ul>    
                         <label>SOCIAL LINKS</label>
                         <li>FACEBOOK</li>
