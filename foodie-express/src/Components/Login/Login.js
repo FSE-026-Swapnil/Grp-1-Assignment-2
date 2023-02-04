@@ -1,13 +1,15 @@
-import react, { useState, useRef } from "react";
+import react, { useState, useRef, useContext } from "react";
 import "./Login.css";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { BASE_URL } from '../../Constants/APIConstants'
 import { setUserSession } from "../Common/Common";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import AuthContext from '../../Store/auth-context';
 
 const Login = () => {
   const navigate = useNavigate();
+  const ctx = useContext(AuthContext);
   const [isLogin, setIsLogin] = useState(true);
   const [isOwner, setIsOwner] = useState(false);
   const [isAgent, setIsAgent] = useState(false);
@@ -107,6 +109,7 @@ const Login = () => {
         if(resp.length > 0){
           if(resp[0].password === passRef.current.value){
             setUserSession(resp[0].id, resp[0].email);
+            ctx.login();
             toast.success("Logged in successfully.");
             navigate(`/dashboard`);
           }else{

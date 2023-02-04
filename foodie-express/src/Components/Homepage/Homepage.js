@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import './Homepage.css'
 import banner from '../../Asset/banner.jpg';
 import dish from '../../Asset/dish.png';
@@ -6,6 +6,7 @@ import mobPayment from '../../Asset/mobile-payment.png';
 import offer from '../../Asset/offer.jpg';
 import railway from '../../Asset/railway.png';
 import trainSeat from '../../Asset/train-seat.png';
+import AuthContext from "../../Store/auth-context";
 
 const Homepage = () => {
     return(
