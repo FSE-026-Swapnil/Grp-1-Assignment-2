@@ -5,7 +5,7 @@ import { DashboardData } from './DashboardData';
 import { IconContext } from 'react-icons';
 
 function Dashboard() {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState();
   return (
     <div className='dasboard-container'>
         <IconContext.Provider value={{ color: '#fff' }}>

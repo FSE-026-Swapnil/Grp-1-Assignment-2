@@ -9,7 +9,7 @@ export const DashboardData = [
         title: 'Search Restaurant',
         path: '/search',
         icon: <FaIcons.FaSearch />,
-        cName: 'nav-text'
+        cName: 'nav-text selected'
       },
       {
         title: 'Previous Orders',

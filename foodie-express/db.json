@@ -117,6 +117,12 @@
       "name": "Hotel Rajyog",
       "address": "Hinjewadi, Pune",
       "bestFor":"Brazilian, Steak, South American, Beverages, Desserts"
+    },
+    { 
+      "id":12,
+      "name": "KFC",
+      "address": "Marine Drive, Mumbai",
+      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages"
     }
   ]
 }
