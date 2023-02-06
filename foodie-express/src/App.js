@@ -9,6 +9,7 @@ import Footer from "./Components/Layout/Footer/Footer";
 import Routers from "./Routers/Routers";
 import AuthContext from "./Store/auth-context";
 import { ToastContainer } from "react-toastify";
+import CartProvider from "./Store/CartProvider";
 
 function App() {
   const [authstatus, setauthstatus] = useState(false);
@@ -25,28 +26,30 @@ function App() {
 
   return (
     <AuthContext.Provider value={{ status: authstatus,login: loggedIn, logout:loggedOut}}>
-      <div className="container-fluid p-0">
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
-      <BrowserRouter>
-        <Header />
-        <div className={layoutClasses}>
-          {authstatus &&  <Dashboard/>}
-          <Routers className=""/>
+      <CartProvider>
+        <div className="container-fluid p-0">
+        <ToastContainer
+          position="top-right"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+        <BrowserRouter>
+          <Header />
+          <div className={layoutClasses}>
+            {authstatus &&  <Dashboard/>}
+            <Routers className=""/>
+          </div>
+          <Footer />
+        </BrowserRouter>
         </div>
-        <Footer />
-      </BrowserRouter>
-    </div>
+      </CartProvider>
     </AuthContext.Provider>
   );
 }

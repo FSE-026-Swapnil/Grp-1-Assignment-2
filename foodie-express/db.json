@@ -60,27 +60,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Veg Sandwich",
+          "dishName": "Veg Sandwich",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Maratha",
+          "dishName": "Veg Maratha",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Aloo Paratha",
+          "dishName": "Aloo Paratha",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Roti",
+          "dishName": "Roti",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Ice-Cream",
+          "dishName": "Ice-Cream",
           "price" : 20
         }
       ]
@@ -93,27 +93,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Paneer Handi",
+          "dishName": "Paneer Handi",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Mughlai",
+          "dishName": "Veg Mughlai",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Chinese",
+          "dishName": "Chinese",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Thai Special",
+          "dishName": "Thai Special",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Cold Coffee",
+          "dishName": "Cold Coffee",
           "price" : 20
         }
       ]
@@ -126,27 +126,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Paneer Bhurji",
+          "dishName": "Paneer Bhurji",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
+          "dishName": "Veg Jaipuri",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
+          "dishName": "Fried Rice",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
+          "dishName": "Veg Loaded",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
+          "dishName": "Burger",
           "price" : 20
         }
       ]
@@ -159,27 +159,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "KFC Special",
+          "dishName": "KFC Special",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Burger",
+          "dishName": "Veg Burger",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "French Fries",
+          "dishName": "French Fries",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Hot Tea",
+          "dishName": "Hot Tea",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Mastani",
+          "dishName": "Mastani",
           "price" : 20
         }
       ]
@@ -192,27 +192,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Paneer Bhurji",
+          "dishName": "Paneer Bhurji",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
+          "dishName": "Veg Jaipuri",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
+          "dishName": "Fried Rice",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
+          "dishName": "Veg Loaded",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
+          "dishName": "Burger",
           "price" : 20
         }
       ]
@@ -225,27 +225,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Veg Sandwich",
+          "dishName": "Veg Sandwich",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Maratha",
+          "dishName": "Veg Maratha",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Aloo Paratha",
+          "dishName": "Aloo Paratha",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Roti",
+          "dishName": "Roti",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Ice-Cream",
+          "dishName": "Ice-Cream",
           "price" : 20
         }
       ]
@@ -259,28 +259,28 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Hyatt Special",
-          "price" : "100"
+          "dishName": "Hyatt Special",
+          "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Burger",
-          "price" : "200"
+          "dishName": "Veg Burger",
+          "price" : 200
         },
         {
           "id": 3,
-          "menu": "French Fries",
-          "price" : "150"
+          "dishName": "French Fries",
+          "price" : 150
         },
         {
           "id": 4,
-          "menu": "Hot Tea",
-          "price" : "20"
+          "dishName": "Hot Tea",
+          "price" : 20
         },
         {
           "id": 5,
-          "menu": "Mastani",
-          "price" : "20"
+          "dishName": "Mastani",
+          "price" : 20
         }
       ]
     },
@@ -292,28 +292,28 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Vitara Special",
-          "price" : "100"
+          "dishName": "Vitara Special",
+          "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
-          "price" : "200"
+          "dishName": "Veg Jaipuri",
+          "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
-          "price" : "150"
+          "dishName": "Fried Rice",
+          "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
-          "price" : "20"
+          "dishName": "Veg Loaded",
+          "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
-          "price" : "20"
+          "dishName": "Burger",
+          "price" : 20
         }
       ]
     },
@@ -325,28 +325,28 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Premdan Special",
-          "price" : "100"
+          "dishName": "Premdan Special",
+          "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
-          "price" : "200"
+          "dishName": "Veg Jaipuri",
+          "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
-          "price" : "150"
+          "dishName": "Fried Rice",
+          "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
-          "price" : "20"
+          "dishName": "Veg Loaded",
+          "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
-          "price" : "20"
+          "dishName": "Burger",
+          "price" : 20
         }
       ]
     },
@@ -358,28 +358,28 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Singh Residency Special",
-          "price" : "100"
+          "dishName": "Singh Residency Special",
+          "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Maratha",
-          "price" : "200"
+          "dishName": "Veg Maratha",
+          "price" : 200
         },
         {
           "id": 3,
-          "menu": "Aloo Paratha",
-          "price" : "150"
+          "dishName": "Aloo Paratha",
+          "price" : 150
         },
         {
           "id": 4,
-          "menu": "Roti",
-          "price" : "20"
+          "dishName": "Roti",
+          "price" : 20
         },
         {
           "id": 5,
-          "menu": "Ice-Cream",
-          "price" : "20"
+          "dishName": "Ice-Cream",
+          "price" : 20
         }
       ]
     },
@@ -391,27 +391,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "Rajyog Special",
+          "dishName": "Rajyog Special",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
+          "dishName": "Veg Jaipuri",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
+          "dishName": "Fried Rice",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
+          "dishName": "Veg Loaded",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
+          "dishName": "Burger",
           "price" : 20
         }
       ]
@@ -424,27 +424,27 @@
       "menu" : [
         {
           "id": 1,
-          "menu": "KFC (Marine Drive) Special",
+          "dishName": "KFC (Marine Drive) Special",
           "price" : 100
         },
         {
           "id": 2,
-          "menu": "Veg Jaipuri",
+          "dishName": "Veg Jaipuri",
           "price" : 200
         },
         {
           "id": 3,
-          "menu": "Fried Rice",
+          "dishName": "Fried Rice",
           "price" : 150
         },
         {
           "id": 4,
-          "menu": "Veg Loaded",
+          "dishName": "Veg Loaded",
           "price" : 20
         },
         {
           "id": 5,
-          "menu": "Burger",
+          "dishName": "Burger",
           "price" : 20
         }
       ]
