@@ -56,73 +56,403 @@
       "id":1,
       "name": "ABC Hotel",
       "address": "Professor Chowk, Ahmednagar",
-      "bestFor":"North Indian, Italian, Continental, Bar Food, Desserts, Beverages"
+      "bestFor":"North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Veg Sandwich",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Maratha",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Aloo Paratha",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Roti",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Ice-Cream",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":2,
       "name": "Sai Hotel",
       "address": "Savedi, Ahmednagar",
-      "bestFor":"Finger Food, Chinese, Pizza, Italian, North Indian, Desserts"
+      "bestFor":"Finger Food, Chinese, Pizza, Italian, North Indian, Desserts",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Paneer Handi",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Mughlai",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Chinese",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Thai Special",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Cold Coffee",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":3,
       "name": "Dominos",
       "address": "Deccan, Pune",
-      "bestFor":"European, Asian, Continental, Italian, Desserts"
+      "bestFor":"European, Asian, Continental, Italian, Desserts",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Paneer Bhurji",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":4,
       "name": "KFC",
       "address": "Kothrud, Pune",
-      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages"
+      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "KFC Special",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Burger",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "French Fries",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Hot Tea",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Mastani",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":5,
       "name": "Hotel Grand",
       "address": "Juhu, Mumbai",
-      "bestFor":"Thai, Cantonese, Japanese"
+      "bestFor":"Thai, Cantonese, Japanese",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Paneer Bhurji",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":6,
       "name": "Hotel Vaishali",
       "address": "FC Road, Pune",
-      "bestFor":"Continental, Modern Indian, Asian, Italian, Finger Food, Beverages"
+      "bestFor":"Continental, Modern Indian, Asian, Italian, Finger Food, Beverages",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Veg Sandwich",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Maratha",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Aloo Paratha",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Roti",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Ice-Cream",
+          "price" : 20
+        }
+      ]
+
     },
     { 
       "id":7,
       "name": "Hotel Hyatt",
       "address": "Dadar, Mumbai",
-      "bestFor":"Cafe, European, Modern Indian, Chinese, Beverages, Desserts"
+      "bestFor":"Cafe, European, Modern Indian, Chinese, Beverages, Desserts",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Hyatt Special",
+          "price" : "100"
+        },
+        {
+          "id": 2,
+          "menu": "Veg Burger",
+          "price" : "200"
+        },
+        {
+          "id": 3,
+          "menu": "French Fries",
+          "price" : "150"
+        },
+        {
+          "id": 4,
+          "menu": "Hot Tea",
+          "price" : "20"
+        },
+        {
+          "id": 5,
+          "menu": "Mastani",
+          "price" : "20"
+        }
+      ]
     },
     { 
       "id":8,
       "name": "Vitara",
       "address": "Andheri, Mumbai",
-      "bestFor":"American, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, Desserts"
+      "bestFor":"American, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, Desserts",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Vitara Special",
+          "price" : "100"
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : "200"
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : "150"
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : "20"
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : "20"
+        }
+      ]
     },
     { 
       "id":9,
       "name": "Premdan Hotel",
       "address": "Churchgate Junction, Mumbai",
-      "bestFor":"Asian, Continental, North Indian, Italian, Mughlai"
+      "bestFor":"Asian, Continental, North Indian, Italian, Mughlai",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Premdan Special",
+          "price" : "100"
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : "200"
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : "150"
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : "20"
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : "20"
+        }
+      ]
     },
     { 
       "id":10,
       "name": "Singh Residency",
       "address": "East expressway, Ahmednagar",
-      "bestFor":"Bar Food, North Indian, Kebab, Mughlai, Biryani, Continental, Pizza"
+      "bestFor":"Bar Food, North Indian, Kebab, Mughlai, Biryani, Continental, Pizza",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Singh Residency Special",
+          "price" : "100"
+        },
+        {
+          "id": 2,
+          "menu": "Veg Maratha",
+          "price" : "200"
+        },
+        {
+          "id": 3,
+          "menu": "Aloo Paratha",
+          "price" : "150"
+        },
+        {
+          "id": 4,
+          "menu": "Roti",
+          "price" : "20"
+        },
+        {
+          "id": 5,
+          "menu": "Ice-Cream",
+          "price" : "20"
+        }
+      ]
     },
     { 
       "id":11,
       "name": "Hotel Rajyog",
       "address": "Hinjewadi, Pune",
-      "bestFor":"Brazilian, Steak, South American, Beverages, Desserts"
+      "bestFor":"Brazilian, Steak, South American, Beverages, Desserts",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "Rajyog Special",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : 20
+        }
+      ]
     },
     { 
       "id":12,
       "name": "KFC",
       "address": "Marine Drive, Mumbai",
-      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages"
+      "bestFor":"Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages",
+      "menu" : [
+        {
+          "id": 1,
+          "menu": "KFC (Marine Drive) Special",
+          "price" : 100
+        },
+        {
+          "id": 2,
+          "menu": "Veg Jaipuri",
+          "price" : 200
+        },
+        {
+          "id": 3,
+          "menu": "Fried Rice",
+          "price" : 150
+        },
+        {
+          "id": 4,
+          "menu": "Veg Loaded",
+          "price" : 20
+        },
+        {
+          "id": 5,
+          "menu": "Burger",
+          "price" : 20
+        }
+      ]
+    }
+  ],
+  "orders":[
+    {
+      
     }
   ]
 }

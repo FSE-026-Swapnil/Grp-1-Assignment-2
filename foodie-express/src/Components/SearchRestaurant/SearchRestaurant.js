@@ -1,12 +1,13 @@
-import React,{useRef,useState} from 'react';
-import './SearchRestaurant.css'
+import React,{useRef,useState,useNavigate} from 'react';
+import './SearchRestaurant.css';
+import { Link } from "react-router-dom";
 import { BASE_URL } from '../../Constants/APIConstants'
 import hotelImage from '../../Asset/Hotel-1.avif';
 
-const SearchRestaurant = () => {
+
+const SearchRestaurant = ({chooseMenu}) => {
     const [restData, setRestData] = useState();
     const addressRef = useRef('');
-
     const searchHandler = () => {
         fetch(BASE_URL + 'restaurants?address_like=' + addressRef.current.value, {
             method: "GET"
@@ -15,19 +16,6 @@ const SearchRestaurant = () => {
           })
           .then((resp) => {
             setRestData(resp);
-            console.log(restData)
-            // if(resp.length > 0){
-            //   if(resp[0].password === passRef.current.value){
-            //     setUserSession(resp[0].id, resp[0].email);
-            //     ctx.login();
-            //     toast.success("Logged in successfully.");
-            //     navigate(`/dashboard`);
-            //   }else{
-            //     toast.error("Invalid credentials. Email or password does not match.");
-            //   }
-            // }else{
-            //   toast.warn("User does not exists.");
-            // }
           });
     }
 
@@ -50,7 +38,7 @@ const SearchRestaurant = () => {
                                 <h5 className="card-title">{item.name}</h5>
                                 <p className="card-text">{item.bestFor}</p>
                                 <p className="card-text">{item.address}</p>
-                                <a href="#" className="btn btn-primary menuBtn">View Menu</a>
+                                <button className="btn btn-primary menuBtn" onClick={()=>chooseMenu(item)}><Link to="/listMenu">View Menu</Link></button>
                             </div>
                         </div>
                      );
