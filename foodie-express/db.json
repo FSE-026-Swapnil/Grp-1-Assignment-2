@@ -61,27 +61,27 @@
         {
           "id": 1,
           "dishName": "Veg Sandwich",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Maratha",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Aloo Paratha",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Roti",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Ice-Cream",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -94,27 +94,27 @@
         {
           "id": 1,
           "dishName": "Paneer Handi",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Mughlai",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Chinese",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Thai Special",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Cold Coffee",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -127,27 +127,27 @@
         {
           "id": 1,
           "dishName": "Paneer Bhurji",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -160,27 +160,27 @@
         {
           "id": 1,
           "dishName": "KFC Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Burger",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "French Fries",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Hot Tea",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Mastani",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -193,27 +193,27 @@
         {
           "id": 1,
           "dishName": "Paneer Bhurji",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -226,27 +226,27 @@
         {
           "id": 1,
           "dishName": "Veg Sandwich",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Maratha",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Aloo Paratha",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Roti",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Ice-Cream",
-          "price" : 20
+          "price" : 20.00
         }
       ]
 
@@ -260,27 +260,27 @@
         {
           "id": 1,
           "dishName": "Hyatt Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Burger",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "French Fries",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Hot Tea",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Mastani",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -293,27 +293,27 @@
         {
           "id": 1,
           "dishName": "Vitara Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -326,27 +326,27 @@
         {
           "id": 1,
           "dishName": "Premdan Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -359,27 +359,27 @@
         {
           "id": 1,
           "dishName": "Singh Residency Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Maratha",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Aloo Paratha",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Roti",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Ice-Cream",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -392,27 +392,27 @@
         {
           "id": 1,
           "dishName": "Rajyog Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     },
@@ -425,27 +425,27 @@
         {
           "id": 1,
           "dishName": "KFC (Marine Drive) Special",
-          "price" : 100
+          "price" : 100.00
         },
         {
           "id": 2,
           "dishName": "Veg Jaipuri",
-          "price" : 200
+          "price" : 200.00
         },
         {
           "id": 3,
           "dishName": "Fried Rice",
-          "price" : 150
+          "price" : 150.00
         },
         {
           "id": 4,
           "dishName": "Veg Loaded",
-          "price" : 20
+          "price" : 20.00
         },
         {
           "id": 5,
           "dishName": "Burger",
-          "price" : 20
+          "price" : 20.00
         }
       ]
     }

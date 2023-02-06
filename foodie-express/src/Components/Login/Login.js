@@ -95,8 +95,6 @@ const Login = () => {
       }
     }
 
-    console.log("userData ==>",userData,BASE_URL);
-
     if(isLogin){
       // Login
       fetch(BASE_URL + 'users?email=' + emailRef.current.value, {
@@ -105,7 +103,6 @@ const Login = () => {
         return response.json();
       })
       .then((resp) => {
-        console.log(resp);
         if(resp.length > 0){
           if(resp[0].password === passRef.current.value){
             setUserSession(resp[0].id, resp[0].email);

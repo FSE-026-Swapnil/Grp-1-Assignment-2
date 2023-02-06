@@ -5,8 +5,8 @@
 
 .listMenu-content{
     display: grid;
-    grid-template-columns: 650px 100px;
-    grid-column-gap: 100px;
+    grid-template-columns: 650px 240px;
+    grid-column-gap: 50px;
 }
 
 .btnGrp{
@@ -23,5 +23,9 @@
 .cart-items{
     border-radius: 5px;
     border: 1px solid black;
-    width: 100px;
+}
+
+.cart-row{
+    display: flex; 
+    justify-content: space-between;
 }

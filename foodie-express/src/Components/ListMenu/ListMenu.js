@@ -7,15 +7,16 @@ function ListMenu(props) {
     const [cart, setCart] = useState();
     const cartCtx = useContext(CartContext);
 
-    const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+    const totalAmount = `${cartCtx.totalAmount.toFixed(2)}`;
     const hasItems = cartCtx.items.length>0;
 
+
     const addHandler = (ele) => {
-        console.log(ele)
         cartCtx.addItem({
             name:ele.dishName,
             id:ele.id,
-            price:ele.price
+            price:ele.price,
+            totalAmount:totalAmount
         });
     }
 
@@ -41,8 +42,8 @@ function ListMenu(props) {
                         {props.menuList && props.menuList.menu.map((item,index)=>{
                             return(
                                 <tr>
-                                    <th scope="row">{item.id}</th>
-                                    <td>{item.menu}</td>
+                                    <th scope="row" key={item.id}>{item.id}</th>
+                                    <td>{item.dishName}</td>
                                     <td>{item.price}</td>
                                     <td>
                                         <button className='btn btnGrp btn-xs btn-success' onClick={()=>addHandler(item)}>Add</button>
@@ -54,7 +55,19 @@ function ListMenu(props) {
                     </tbody>
                 </table>
                 <div className="cart-items">
-
+                    <div>
+                        <h4>Cart :</h4>
+                        {cartCtx.items.map((item,index)=>{
+                            return(
+                                <div className='cart-row'>
+                                    <span>{item.name} : </span>
+                                    <span>{item.price} ₹</span>
+                                </div>
+                            );
+                        })}
+                        <hr />
+                        <label>Total Amount : ₹. {totalAmount}</label>
+                    </div>
                 </div>
             </div>
         </div>

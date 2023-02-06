@@ -4,13 +4,13 @@ import CartContext from './cart-context.js';
 
 const defaultCartState = {
   items: [],
-  totalAmount: 0,
+  totalAmount: 0
 };
 
 const cartReducer = (state, action) => {
   if (action.type === 'ADD') {
     const updatedTotalAmount =
-      state.totalAmount + action.item.price * action.item.amount;
+      state.totalAmount + action.item.price;
 
     const existingCartItemIndex = state.items.findIndex(
       (item) => item.id === action.item.id
@@ -21,7 +21,7 @@ const cartReducer = (state, action) => {
     if (existingCartItem) {
       const updatedItem = {
         ...existingCartItem,
-        amount: existingCartItem.amount + action.item.amount,
+        amount: existingCartItem.price + action.item.price,
       };
       updatedItems = [...state.items];
       updatedItems[existingCartItemIndex] = updatedItem;
@@ -65,7 +65,6 @@ const CartProvider = ({ children }) => {
   );
 
   const addItemToCartHandler = (item) => {
-    console.log("cartProvider addFunc",item)
     dispatchCartAction({ type: 'ADD', item: item });
   };
 
@@ -79,6 +78,8 @@ const CartProvider = ({ children }) => {
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
   };
+
+  
 
   return (
     <CartContext.Provider value={cartContext}>
