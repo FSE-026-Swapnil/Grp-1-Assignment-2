@@ -1,10 +1,13 @@
-import React, { useState,useContext } from 'react'
+import React, { useState,useContext,useNavigate } from 'react'
 import './ListMenu.css'
 import CartProvider from '../../Store/CartProvider';
 import CartContext from '../../Store/cart-context';
+import { BASE_URL } from '../../Constants/APIConstants';
+import { toast } from "react-toastify";
+import { getUser } from '../Common/Common';
 
 function ListMenu(props) {
-    const [cart, setCart] = useState();
+    const user = getUser();
     const cartCtx = useContext(CartContext);
 
     const totalAmount = `${cartCtx.totalAmount.toFixed(2)}`;
@@ -21,7 +24,27 @@ function ListMenu(props) {
     }
 
     const deleteHandler = (ele) => {
+        cartCtx.removeItem({
+            name:ele.dishName,
+            id:ele.id,
+            price:ele.price,
+            totalAmount:totalAmount
+        });
+    }
 
+    const placeOrderHandler = () => {
+         // Place order 
+         cartCtx.orderedBy = Number(user.id)
+         
+         fetch(BASE_URL + 'orders', {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(cartCtx)
+          }).then((response) => {
+            toast.success('Hurray!!! Order placed successfully.');
+          });
     }
 
 
@@ -54,9 +77,11 @@ function ListMenu(props) {
                         })}
                     </tbody>
                 </table>
-                <div className="cart-items">
-                    <div>
-                        <h4>Cart :</h4>
+                { hasItems && <div className="cart-items">
+                    <div className='header'>
+                        <h4>Cart</h4>
+                    </div>    
+                    <div className='main-body'>
                         {cartCtx.items.map((item,index)=>{
                             return(
                                 <div className='cart-row'>
@@ -65,11 +90,15 @@ function ListMenu(props) {
                                 </div>
                             );
                         })}
-                        <hr />
+                    </div>
+                    <div className='footer'>    
                         <label>Total Amount : ₹. {totalAmount}</label>
                     </div>
-                </div>
+                </div>}
             </div>
+            {hasItems && <div className="text-center mt-5">
+                <button type="button" className="btn btn-primary" onClick={placeOrderHandler}>Confirm & Place Order</button>
+            </div>}
         </div>
     )
 }

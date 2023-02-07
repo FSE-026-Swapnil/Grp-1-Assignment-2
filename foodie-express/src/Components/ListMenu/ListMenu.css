@@ -6,7 +6,7 @@
 .listMenu-content{
     display: grid;
     grid-template-columns: 650px 240px;
-    grid-column-gap: 50px;
+    grid-column-gap: 120px;
 }
 
 .btnGrp{
@@ -23,6 +23,27 @@
 .cart-items{
     border-radius: 5px;
     border: 1px solid black;
+    height: max-content;
+}
+
+.cart-items .header{
+    background-color: lightsalmon;
+    height: 35px;
+    text-align: center;
+}
+
+.cart-items .footer{
+    background-color: lightsalmon;
+    height: 35px;
+    text-align: center;
+}
+
+.cart-items .main-body{
+    margin: 15px 22px 15px 5px;
+}
+.cart-items label{
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .cart-row{
