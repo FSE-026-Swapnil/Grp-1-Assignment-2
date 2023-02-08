@@ -38,6 +38,7 @@ function ListMenu(props) {
          // Place order 
          cartCtx.orderedBy = Number(user.id)
          cartCtx.status = "placed";
+         cartCtx.fulfilledBy = props.menuList.name +', '+ props.menuList.address;
          
          fetch(BASE_URL + 'orders', {
             method: "POST",

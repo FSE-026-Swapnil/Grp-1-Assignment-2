@@ -13,33 +13,42 @@ function Dashboard() {
   const [complOrders, setComplOrders] = useState(0);
   const [cancOrders, setCancOrders] = useState(0);
   const user = getUser();
+  let activeOrd = 0;
+  let compOrd = 0;
+  let cancOrd = 0;
 
   const fetchOrdersCount = () => {
+    activeOrd = 0;
+    compOrd = 0;
+    cancOrd = 0;
     fetch(BASE_URL + 'orders?orderedBy=' + user.id, {
         method: "GET"
-      }).then((response) => {
+    }).then((response) => {
         return response.json();
-      })
-      .then((resp) => {
+    })
+    .then((resp) => {
         if(resp.length > 0){
-            console.log("resp",resp)
             resp.forEach((item) => {
-                console.log("activeOrders",activeOrders)
+                console.log(resp);
                 if(item.status === 'placed'){
-                    setActiveOrders(activeOrders+1);
-                }else if(item.status === 'delivered'){
-                    setComplOrders(complOrders+1);
+                    activeOrd += 1;
+                    setActiveOrders(activeOrd);
+                }else if(item.status === 'completed'){
+                    compOrd += 1;
+                    setComplOrders(compOrd);
                 }else if(item.status === 'cancelled'){
-                    setCancOrders(cancOrders+1);
+                    cancOrd += 1;
+                    setCancOrders(cancOrd);
                 }
             })
         }
-      });
+    });
   }
 
   useEffect(() => {
     fetchOrdersCount();
   },[])
+  
   
   return (
     <div className='dasboard-container'>

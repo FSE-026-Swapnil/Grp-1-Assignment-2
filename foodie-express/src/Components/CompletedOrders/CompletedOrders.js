@@ -4,31 +4,30 @@ import { getUser } from '../Common/Common';
 import { BASE_URL } from '../../Constants/APIConstants'
 
 
-function ActiveOrder() {
-  const [activeData,setActiveData] = useState([]);
+function CompletedOrders() {
+  const [compData,setCompData] = useState([]);
   const user = getUser();
 
-  const fetchActiveOrder = () => {
-    fetch(BASE_URL + 'orders?orderedBy=' + user.id + '&status=placed', {
+  const fetchCompletedOrder = () => {
+    fetch(BASE_URL + 'orders?orderedBy=' + user.id + '&status=completed', {
         method: "GET"
       }).then((response) => {
         return response.json();
       })
       .then((resp) => {
         if(resp.length > 0){
-          setActiveData(resp);
-          console.log(resp);
+          setCompData(resp);
         }
       });
   }
 
   useEffect(() => {
-    fetchActiveOrder();
+    fetchCompletedOrder();
   },[])
 
   return (
     <div>
-      <h1 style={{'marginLeft':'25px'}}>Active Order</h1>
+      <h1 style={{'marginLeft':'25px'}}>Completed Orders</h1>
       <table className="table">
         <thead className="thead-dark">
             <tr>
@@ -39,7 +38,7 @@ function ActiveOrder() {
             </tr>
         </thead>
         <tbody>
-            {activeData && activeData.map((item,index)=>{
+            {compData && compData.map((item,index)=>{
                 return(
                     <tr>
                         <th scope="row" key={item.id}>{item.id}</th>
@@ -55,4 +54,5 @@ function ActiveOrder() {
   )
 }
 
-export default ActiveOrder
+export default CompletedOrders
+

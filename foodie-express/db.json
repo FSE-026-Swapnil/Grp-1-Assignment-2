@@ -453,62 +453,140 @@
     {
       "items": [
         {
-          "name": "Veg Sandwich",
+          "name": "Vitara Special",
           "id": 1,
           "price": 100,
           "totalAmount": "0.00"
         },
         {
-          "name": "Veg Maratha",
+          "name": "Veg Jaipuri",
           "id": 2,
           "price": 200,
           "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
         }
       ],
-      "totalAmount": 300,
+      "totalAmount": 450,
       "orderedBy": 10,
-      "status": "placed",
+      "status": "completed",
+      "fulfilledBy": "Vitara, Andheri, Mumbai",
       "id": 1
     },
     {
       "items": [
         {
-          "name": "Veg Sandwich",
+          "name": "Vitara Special",
           "id": 1,
           "price": 100,
           "totalAmount": "0.00"
         },
         {
-          "name": "Veg Maratha",
+          "name": "Veg Jaipuri",
           "id": 2,
           "price": 200,
           "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
         }
       ],
-      "totalAmount": 300,
+      "totalAmount": 470,
       "orderedBy": 10,
       "status": "placed",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
       "id": 2
     },
     {
       "items": [
         {
-          "name": "Paneer Handi",
+          "name": "Vitara Special",
           "id": 1,
           "price": 100,
           "totalAmount": "0.00"
         },
         {
-          "name": "Veg Mughlai",
+          "name": "Veg Jaipuri",
           "id": 2,
           "price": 200,
           "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
+        },
+        {
+          "name": "Thai Special",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "470.00"
         }
       ],
-      "totalAmount": 300,
+      "totalAmount": 490,
       "orderedBy": 10,
       "status": "placed",
+      "fulfilledBy": "Sai Hotel, Savedi, Ahmednagar",
       "id": 3
+    },
+    {
+      "items": [
+        {
+          "name": "Vitara Special",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
+        },
+        {
+          "name": "Thai Special",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "470.00"
+        }
+      ],
+      "totalAmount": 490,
+      "orderedBy": 10,
+      "status": "placed",
+      "fulfilledBy": "Dominos, Deccan, Pune",
+      "id": 4
     }
   ]
 }

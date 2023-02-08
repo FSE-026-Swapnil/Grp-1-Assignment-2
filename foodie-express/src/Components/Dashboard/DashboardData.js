@@ -5,15 +5,21 @@ import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 
 export const DashboardData = [
-    {
-        title: 'Search Restaurant',
-        path: '/search',
-        icon: <FaIcons.FaSearch />,
+      {
+        title: 'Dashboard',
+        path: '/dashboard',
+        icon: <FaIcons.FaHome />,
         cName: 'nav-text selected'
       },
       {
+        title: 'Search Restaurant',
+        path: '/search',
+        icon: <FaIcons.FaSearch />,
+        cName: 'nav-text'
+      },
+      {
         title: 'Previous Orders',
-        path: '/orderHistory',
+        path: '/completedOrder',
         icon: <IoIcons.IoIosPaper />,
         cName: 'nav-text'
       },
