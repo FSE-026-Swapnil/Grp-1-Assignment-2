@@ -1,13 +1,15 @@
-import React, { useState,useContext,useNavigate } from 'react'
+import React, { useState,useContext } from 'react'
 import './ListMenu.css'
 import CartProvider from '../../Store/CartProvider';
 import CartContext from '../../Store/cart-context';
 import { BASE_URL } from '../../Constants/APIConstants';
 import { toast } from "react-toastify";
 import { getUser } from '../Common/Common';
+import { useNavigate } from "react-router-dom";
 
 function ListMenu(props) {
     const user = getUser();
+    const navigate = useNavigate();
     const cartCtx = useContext(CartContext);
 
     const totalAmount = `${cartCtx.totalAmount.toFixed(2)}`;
@@ -35,6 +37,7 @@ function ListMenu(props) {
     const placeOrderHandler = () => {
          // Place order 
          cartCtx.orderedBy = Number(user.id)
+         cartCtx.status = "placed";
          
          fetch(BASE_URL + 'orders', {
             method: "POST",
@@ -43,8 +46,19 @@ function ListMenu(props) {
             },
             body: JSON.stringify(cartCtx)
           }).then((response) => {
-            toast.success('Hurray!!! Order placed successfully.');
+            if(response.status === 201){
+                toast.success('Hurray!!! Order placed successfully.');
+                setTimeout(()=>{
+                    navigate(`/dashboard`);
+                },1500);
+            }else{
+                toast.error(response.statusText)
+            }
           });
+    }
+
+    const goBackHandler = () => {
+        navigate(`/search`);
     }
 
 
@@ -96,7 +110,8 @@ function ListMenu(props) {
                     </div>
                 </div>}
             </div>
-            {hasItems && <div className="text-center mt-5">
+            {hasItems && <div className="text-center mt-5 btn-grp">
+                <button type="button" className="btn btn-warning" onClick={goBackHandler}>Choose from other restaurant</button>
                 <button type="button" className="btn btn-primary" onClick={placeOrderHandler}>Confirm & Place Order</button>
             </div>}
         </div>
