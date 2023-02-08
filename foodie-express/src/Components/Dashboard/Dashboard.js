@@ -21,15 +21,16 @@ function Dashboard() {
     activeOrd = 0;
     compOrd = 0;
     cancOrd = 0;
+
     fetch(BASE_URL + 'orders?orderedBy=' + user.id, {
         method: "GET"
     }).then((response) => {
         return response.json();
     })
     .then((resp) => {
+
         if(resp.length > 0){
             resp.forEach((item) => {
-                console.log(resp);
                 if(item.status === 'placed'){
                     activeOrd += 1;
                     setActiveOrders(activeOrd);
@@ -47,7 +48,7 @@ function Dashboard() {
 
   useEffect(() => {
     fetchOrdersCount();
-  },[])
+  },[user])
   
   
   return (

@@ -51,7 +51,11 @@ function ListMenu(props) {
                 toast.success('Hurray!!! Order placed successfully.');
                 setTimeout(()=>{
                     navigate(`/dashboard`);
-                },1500);
+                    cartCtx.items.map((item,index)=>{
+                        cartCtx.removeItem(item);
+                    })
+                    cartCtx.totalAmount = 0;
+                },1200);
             }else{
                 toast.error(response.statusText)
             }

@@ -38,7 +38,7 @@ const SearchRestaurant = ({chooseMenu}) => {
                                 <h5 className="card-title">{item.name}</h5>
                                 <p className="card-text">{item.bestFor}</p>
                                 <p className="card-text">{item.address}</p>
-                                <button className="btn btn-primary menuBtn" onClick={()=>chooseMenu(item)}><Link to="/listMenu">View Menu</Link></button>
+                                <button className="btn btn-primary menuBtn" onClick={()=>chooseMenu(item)}><Link to="/listMenu" style={{color:"white",fontWeight:'bold',textDecoration:'none'}}>View Menu</Link></button>
                             </div>
                         </div>
                      );
