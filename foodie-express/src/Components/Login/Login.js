@@ -81,17 +81,26 @@ const Login = () => {
       password : passRef.current.value
     };
     
-    if(customerType === 'Restaurant Owner'){
-      userData = {
-        ...userData,
-        restaurantName : nameRef.current.value,
-        restaurantAddr : addrRef.current.value,
-        fssaiNo : fssaiRef.current.value
-      }
-    }else if(customerType === 'System User'){
-      userData = {
-        ...userData,
-        mobileNo : mobRef.current.value
+    if(!isLogin){
+      if(customerType === 'Restaurant Owner'){
+        userData = {
+          ...userData,
+          restaurantName : nameRef.current.value,
+          restaurantAddr : addrRef.current.value,
+          fssaiNo : fssaiRef.current.value,
+          customerType:'Restaurant Owner'
+        }
+      }else if(customerType === 'System User'){
+        userData = {
+          ...userData,
+          mobileNo : mobRef.current.value,
+          customerType:'System User'
+        }
+      }else{
+        userData = {
+          ...userData,
+          customerType:'User'
+        }
       }
     }
 
@@ -105,7 +114,7 @@ const Login = () => {
       .then((resp) => {
         if(resp.length > 0){
           if(resp[0].password === passRef.current.value){
-            setUserSession(resp[0].id, resp[0].email);
+            setUserSession(resp[0].id, resp[0].email,resp[0].customerType,resp[0]?.restaurantName);
             ctx.login();
             toast.success("Logged in successfully.");
             navigate(`/dashboard`);

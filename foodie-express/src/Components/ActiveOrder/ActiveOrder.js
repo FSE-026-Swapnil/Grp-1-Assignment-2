@@ -17,7 +17,6 @@ function ActiveOrder() {
       .then((resp) => {
         if(resp.length > 0){
           setActiveData(resp);
-          console.log(resp);
         }
       });
   }
@@ -29,11 +28,11 @@ function ActiveOrder() {
   return (
     <div>
       <h1 style={{'marginLeft':'25px'}}>Active Order</h1>
-      <table className="table">
+      {activeData.length > 0 && <table className="table">
         <thead className="thead-dark">
             <tr>
             <th scope="col" style={{width:'5%'}}>#</th>
-            <th scope="col" style={{width:'20%'}}>Fulfilled By</th>
+            <th scope="col" style={{width:'20%'}}>Ordered By</th>
             <th scope="col" style={{width:'10%'}}>Price</th>
             <th scope="col" style={{width:'10%'}}>Total Cart Items</th>
             </tr>
@@ -50,7 +49,8 @@ function ActiveOrder() {
                 );
             })}
         </tbody>
-      </table>
+      </table>}
+      {activeData.length == 0 && <h3 style={{margin:'25px'}}>No Active Order !!!</h3>}
     </div>
   )
 }

@@ -30,3 +30,24 @@ export const DashboardData = [
         cName: 'nav-text'
       }
 ];
+
+export const DashboardDataRestOwner = [
+  {
+    title: 'Dashboard',
+    path: '/dashboard',
+    icon: <FaIcons.FaHome />,
+    cName: 'nav-text selected'
+  },
+  {
+    title: 'Active Orders',
+    path: '/restActiveOrders',
+    icon: <FaIcons.FaCartPlus />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Add/Edit Details',
+    path: '/',
+    icon: <FaIcons.FaPencilAlt />,
+    cName: 'nav-text'
+  }
+];

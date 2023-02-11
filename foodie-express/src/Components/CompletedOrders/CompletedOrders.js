@@ -28,7 +28,7 @@ function CompletedOrders() {
   return (
     <div>
       <h1 style={{'marginLeft':'25px'}}>Completed Orders</h1>
-      <table className="table">
+      { compData.length > 0 && <table className="table">
         <thead className="thead-dark">
             <tr>
             <th scope="col" style={{width:'5%'}}>#</th>
@@ -49,7 +49,8 @@ function CompletedOrders() {
                 );
             })}
         </tbody>
-      </table>
+      </table>}
+      { compData.length == 0 && <h3 style={{margin:'25px'}}>No Completed Orders !!!</h3>}
     </div>
   )
 }

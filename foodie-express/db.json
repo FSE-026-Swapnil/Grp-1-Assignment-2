@@ -49,6 +49,21 @@
       "email": "ss@yopmail.com",
       "password": "sssk",
       "id": 10
+    },
+    {
+      "email": "ab@yopmail.com",
+      "password": "abcd",
+      "customerType": "User",
+      "id": 11
+    },
+    {
+      "email": "zx@yopmail.com",
+      "password": "zxcv",
+      "restaurantName": "xyz restaurant",
+      "restaurantAddr": "Balewadi highstreet, Pune",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 12
     }
   ],
   "restaurants": [
@@ -447,6 +462,39 @@
           "price": 20
         }
       ]
+    },
+    {
+      "id": 13,
+      "name": "xyz restaurant",
+      "address": "Balewadi highstreet, Pune",
+      "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Veg Sandwich",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Maratha",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Aloo Paratha",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Roti",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Ice-Cream",
+          "price": 20
+        }
+      ]
     }
   ],
   "orders": [
@@ -474,7 +522,7 @@
       "totalAmount": 450,
       "orderedBy": 10,
       "status": "completed",
-      "fulfilledBy": "Vitara, Andheri, Mumbai",
+      "fulfilledBy": "xyz restaurant",
       "id": 1
     },
     {
@@ -507,7 +555,7 @@
       "totalAmount": 470,
       "orderedBy": 10,
       "status": "placed",
-      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "fulfilledBy": "xyz restaurant",
       "id": 2
     },
     {
@@ -545,8 +593,8 @@
       ],
       "totalAmount": 490,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "Sai Hotel, Savedi, Ahmednagar",
+      "status": "accepted",
+      "fulfilledBy": "xyz restaurant",
       "id": 3
     },
     {
@@ -584,8 +632,8 @@
       ],
       "totalAmount": 490,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "Dominos, Deccan, Pune",
+      "status": "completed",
+      "fulfilledBy": "xyz restaurant",
       "id": 4
     },
     {
@@ -600,7 +648,7 @@
       "totalAmount": 100,
       "orderedBy": 10,
       "status": "placed",
-      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "fulfilledBy": "xyz restaurant",
       "id": 5
     },
     {
@@ -614,8 +662,8 @@
       ],
       "totalAmount": 100,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "Dominos, Deccan, Pune",
+      "status": "completed",
+      "fulfilledBy": "xyz restaurant",
       "id": 6
     },
     {
@@ -636,7 +684,7 @@
       "totalAmount": 120,
       "orderedBy": 10,
       "status": "placed",
-      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "fulfilledBy": "xyz restaurant",
       "id": 7
     },
     {
@@ -656,8 +704,8 @@
       ],
       "totalAmount": 120,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "ABC Hotel, Professor Chowk, Ahmednagar",
+      "status": "accepted",
+      "fulfilledBy": "xyz restaurant",
       "id": 8
     },
     {
@@ -689,8 +737,8 @@
       ],
       "totalAmount": 570,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "Dominos, Deccan, Pune",
+      "status": "accepted",
+      "fulfilledBy": "xyz restaurant",
       "id": 9
     }
   ]
