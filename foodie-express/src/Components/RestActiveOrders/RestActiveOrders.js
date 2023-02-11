@@ -3,65 +3,82 @@ import { getUser } from '../Common/Common';
 import { BASE_URL } from '../../Constants/APIConstants'
 
 const RestActiveOrders = () =>{
-    const [activeData,setActiveData] = useState([]);
+    const [orderData,setOrderData] = useState([]);
+    const [allData,setAllData] = useState([]);
     const user = getUser();
 
-    const fetchUserDetails = (data) => {
-        fetch(BASE_URL + 'users?id=' + data[0].orderedBy, {
-          method: "GET"
+    const fetchAllOrder = () => {
+        fetch(BASE_URL + 'orders?fulfilledBy=' + user.name, {
+            method: "GET"
         }).then((response) => {
-          return response.json();
+            return response.json();
         })
         .then((resp) => {
-          if(resp.length > 0){
-            data[0].orderedBy = resp[0].email;
-            setActiveData(data);
-          }
+            if(resp.length > 0){
+            setAllData(resp);
+            }
         });
-      }  
+    }
 
-  const fetchActiveOrder = () => {
-    fetch(BASE_URL + 'orders?fulfilledBy=' + user.name + '&status=accepted', {
-        method: "GET"
-      }).then((response) => {
-        return response.json();
-      })
-      .then((resp) => {
-        if(resp.length > 0){
-          //setActiveData(resp);
-          fetchUserDetails(resp);
-        }
-      });
-  }
+    const acceptRejectHandler = (ele,status) => {
+        ele.status = status;
+        fetch(BASE_URL + 'orders?id=' + ele.id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(ele)
+        }).then((response) => {
+            return response.json();
+        })
+        .then((resp) => {
+            if(resp.length > 0){
+                //setAllData(resp);
+            }
+        });
+    }
 
-  useEffect(() => {
-    fetchActiveOrder();
-  },[])
+
+    useEffect(() => {
+        fetchAllOrder();
+    },[])
 
     return(
         <div>
-            {activeData.length > 0 && 
+            {allData.length > 0 && 
             <div>
-                <h1 style={{'marginLeft':'25px'}}>Active Orders</h1>
+                <h1 style={{'marginLeft':'25px'}}>All Orders</h1>
                 <table className="table">
                 <thead className="thead-dark">
                     <tr>
                     <th scope="col" style={{width:'5%'}}>#</th>
-                    <th scope="col" style={{width:'5%'}}>Ordered By</th>
+                    <th scope="col" style={{width:'25%'}}>Ordered By</th>
                     <th scope="col" style={{width:'20%'}}>Order Items</th>
                     <th scope="col" style={{width:'10%'}}>Price</th>
                     <th scope="col" style={{width:'10%'}}>status</th>
+                    <th scope="col" style={{width:'30%'}}>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {activeData.map((item,index)=>{
+                    {allData.map((item,index)=>{
                         return(
                             <tr>
                                 <th scope="row" key={item.id}>{item.id}</th>
-                                <td>{item.orderedBy}</td>
+                                <td>{item.customerName}</td>
                                 <td>{item.items.length}</td>
                                 <td>{item.totalAmount}</td>
                                 <td>{item.status}</td>
+                                { item.status === 'placed' && 
+                                    <td className="mt-5 btn-grp">
+                                        <button type="button" className="btn btn-sm btn-success" onClick={()=>acceptRejectHandler(item,'accepted')} >Accept</button>
+                                        <button type="button" className="btn btn-sm btn-danger" onClick={()=>acceptRejectHandler(item,'rejected')} >Reject</button>
+                                    </td>
+                                }
+                                { item.status !== 'placed' && 
+                                    <td className="mt-5 btn-grp">
+                                       N.A
+                                    </td>
+                                }
                             </tr>
                         );
                     })}
@@ -70,7 +87,7 @@ const RestActiveOrders = () =>{
             </div>
             }
 
-            {activeData.length == 0 && <h3 style={{margin:'25px'}}>No Active Orders !!!</h3>}
+            {allData.length == 0 && <h3 style={{margin:'25px'}}>No Orders !!!</h3>}
         </div>
     );
 }

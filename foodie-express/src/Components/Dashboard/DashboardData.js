@@ -39,7 +39,7 @@ export const DashboardDataRestOwner = [
     cName: 'nav-text selected'
   },
   {
-    title: 'Active Orders',
+    title: 'Order Details',
     path: '/restActiveOrders',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'

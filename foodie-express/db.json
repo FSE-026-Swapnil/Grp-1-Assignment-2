@@ -740,6 +740,28 @@
       "status": "accepted",
       "fulfilledBy": "xyz restaurant",
       "id": 9
+    },
+    {
+      "items": [
+        {
+          "name": "Veg Sandwich",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Maratha",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        }
+      ],
+      "totalAmount": 300,
+      "orderedBy": 11,
+      "customerName": "ab@yopmail.com",
+      "status": "placed",
+      "fulfilledBy": "xyz restaurant, Balewadi highstreet, Pune",
+      "id": 10
     }
   ]
 }

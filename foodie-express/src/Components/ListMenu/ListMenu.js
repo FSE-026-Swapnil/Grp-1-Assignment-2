@@ -36,7 +36,8 @@ function ListMenu(props) {
 
     const placeOrderHandler = () => {
          // Place order 
-         cartCtx.orderedBy = Number(user.id)
+         cartCtx.orderedBy = Number(user.id);
+         cartCtx.customerName = user.email;
          cartCtx.status = "placed";
          cartCtx.fulfilledBy = props.menuList.name +', '+ props.menuList.address;
          
