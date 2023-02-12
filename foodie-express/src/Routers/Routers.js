@@ -8,6 +8,7 @@ import ListMenu from "../Components/ListMenu/ListMenu";
 import Login from "../Components/Login/Login";
 import RestActiveOrders from "../Components/RestActiveOrders/RestActiveOrders";
 import SearchRestaurant from "../Components/SearchRestaurant/SearchRestaurant";
+import AddEditDetails from "../Components/AddEditDetails/AddEditDetails";
 
 const Routers = () => {
 
@@ -28,18 +29,7 @@ const Routers = () => {
       <Route path="/activeOrder" element={<ActiveOrder />} />
       <Route path="/listMenu" element={<ListMenu menuList={menu}/>} />
       <Route path="/restActiveOrders" element={<RestActiveOrders />} />
-      {/* <Route path="/About" component={About} />
-      <Route path="/Services" component={Services} />
-      <Route path="/Service/:id" component={Service} />
-      <Route  path="/Admin">
-      {isAuthenticated === true ?
-        <Admin />
-      :
-        <Redirect to={{ pathname: "/login", state: { from: location } }} />
-      }
-    </Route>
-      <Route component={PageNotFound} /> */}
-      
+      <Route path="/addEditDetails" element={<AddEditDetails />} />
       </Routes>
 
     </div>

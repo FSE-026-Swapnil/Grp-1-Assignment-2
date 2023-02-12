@@ -46,7 +46,7 @@ export const DashboardDataRestOwner = [
   },
   {
     title: 'Add/Edit Details',
-    path: '/',
+    path: '/addEditDetails',
     icon: <FaIcons.FaPencilAlt />,
     cName: 'nav-text'
   }

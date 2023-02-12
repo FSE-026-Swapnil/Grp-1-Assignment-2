@@ -552,7 +552,16 @@
       "restaurantAddr": "Bengalore",
       "fssaiNo": "1234567890",
       "customerType": "Restaurant Owner",
-      "menu": [],
+      "menu": [{
+        "id": 1,
+        "dishName": "Veg Sandwich",
+        "price": 100
+      },
+      {
+        "id": 2,
+        "dishName": "Veg Maratha",
+        "price": 200
+      }],
       "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
       "id": 14
     }
