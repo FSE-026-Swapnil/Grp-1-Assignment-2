@@ -80,6 +80,39 @@
       "fssaiNo": "1234567890",
       "customerType": "Restaurant Owner",
       "id": 14
+    },
+    {
+      "email": "tset@yopmail.com",
+      "password": "tset",
+      "customerType": "User",
+      "id": 15
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 16
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 17
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 18
     }
   ],
   "restaurants": [
@@ -511,6 +544,17 @@
           "price": 20
         }
       ]
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "menu": [],
+      "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "id": 14
     }
   ],
   "orders": [

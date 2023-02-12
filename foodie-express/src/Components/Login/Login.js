@@ -134,7 +134,23 @@ const Login = () => {
           },
           body: JSON.stringify(userData)
         }).then((response) => {
+          return response.json();
+        })
+        .then((response) => {
           toast.success('Hurray!!! Registration completed.');
+          if(response.customerType === 'Restaurant Owner'){
+            userData.menu = [];
+            userData.bestFor = "North Indian, Italian, Continental, Bar Food, Desserts, Beverages"
+            fetch(BASE_URL + 'restaurants', {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(userData)
+            }).then((response) => {
+              
+            });
+          }
         });
       }
   };
