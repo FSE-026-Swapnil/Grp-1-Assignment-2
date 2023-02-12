@@ -48,6 +48,7 @@
     {
       "email": "ss@yopmail.com",
       "password": "sssk",
+      "customerType": "User",
       "id": 10
     },
     {
@@ -64,6 +65,21 @@
       "fssaiNo": "1234567890",
       "customerType": "Restaurant Owner",
       "id": 12
+    },
+    {
+      "email": "test@yopmail.com",
+      "password": "test12",
+      "customerType": "User",
+      "id": 13
+    },
+    {
+      "email": "sk12@yopmail.com",
+      "password": "ssk12",
+      "restaurantName": "Hotel Vaishali, FC Road, Pune",
+      "restaurantAddr": "FC Road, Pune",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 14
     }
   ],
   "restaurants": [
@@ -522,7 +538,7 @@
       "totalAmount": 450,
       "orderedBy": 10,
       "status": "completed",
-      "fulfilledBy": "xyz restaurant",
+      "fulfilledBy": "Hotel Vaishali",
       "id": 1
     },
     {
@@ -647,8 +663,9 @@
       ],
       "totalAmount": 100,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "xyz restaurant",
+      "status": "accepted",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "customerName": "ms@yopmail.com",
       "id": 5
     },
     {
@@ -663,7 +680,8 @@
       "totalAmount": 100,
       "orderedBy": 10,
       "status": "completed",
-      "fulfilledBy": "xyz restaurant",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "customerName": "vk@yopmail.com",
       "id": 6
     },
     {
@@ -683,8 +701,9 @@
       ],
       "totalAmount": 120,
       "orderedBy": 10,
-      "status": "placed",
-      "fulfilledBy": "xyz restaurant",
+      "status": "rejected",
+      "customerName": "min@yopmail.com",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
       "id": 7
     },
     {
@@ -738,29 +757,30 @@
       "totalAmount": 570,
       "orderedBy": 10,
       "status": "accepted",
-      "fulfilledBy": "xyz restaurant",
+      "customerName": "max@yopmail.com",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
       "id": 9
     },
     {
       "items": [
         {
-          "name": "Veg Sandwich",
-          "id": 1,
-          "price": 100,
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
           "totalAmount": "0.00"
         },
         {
-          "name": "Veg Maratha",
-          "id": 2,
-          "price": 200,
-          "totalAmount": "100.00"
+          "name": "Aloo Paratha",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "20.00"
         }
       ],
-      "totalAmount": 300,
-      "orderedBy": 11,
-      "customerName": "ab@yopmail.com",
-      "status": "placed",
-      "fulfilledBy": "xyz restaurant, Balewadi highstreet, Pune",
+      "totalAmount": 170,
+      "orderedBy": 13,
+      "customerName": "test@yopmail.com",
+      "status": "accepted",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
       "id": 10
     }
   ]

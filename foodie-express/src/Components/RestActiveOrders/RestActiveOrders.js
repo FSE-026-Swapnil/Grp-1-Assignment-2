@@ -1,8 +1,12 @@
 import React, { Component, useState,useEffect } from 'react';
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { getUser } from '../Common/Common';
-import { BASE_URL } from '../../Constants/APIConstants'
+import { BASE_URL } from '../../Constants/APIConstants';
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const RestActiveOrders = () =>{
+    const navigate = useNavigate();
     const [orderData,setOrderData] = useState([]);
     const [allData,setAllData] = useState([]);
     const user = getUser();
@@ -21,20 +25,18 @@ const RestActiveOrders = () =>{
     }
 
     const acceptRejectHandler = (ele,status) => {
-        ele.status = status;
-        fetch(BASE_URL + 'orders?id=' + ele.id, {
+        ele.status = status
+        fetch(BASE_URL + 'orders/' + ele.id, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(ele)
-        }).then((response) => {
-            return response.json();
-        })
-        .then((resp) => {
-            if(resp.length > 0){
-                //setAllData(resp);
-            }
+        }).then((resp) => {
+            toast.success("Order "+ status +" successfully.");
+            navigate(`/dashboard`);
+        }).catch((err)=>{
+            console.log(err.message)
         });
     }
 

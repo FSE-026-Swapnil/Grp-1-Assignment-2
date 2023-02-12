@@ -9,7 +9,7 @@ function ActiveOrder() {
   const user = getUser();
 
   const fetchActiveOrder = () => {
-    fetch(BASE_URL + 'orders?orderedBy=' + user.id + '&status=placed', {
+    fetch(BASE_URL + 'orders?orderedBy=' + user.id + '&status=placed&status=accepted', {
         method: "GET"
       }).then((response) => {
         return response.json();
@@ -32,7 +32,7 @@ function ActiveOrder() {
         <thead className="thead-dark">
             <tr>
             <th scope="col" style={{width:'5%'}}>#</th>
-            <th scope="col" style={{width:'20%'}}>Ordered By</th>
+            <th scope="col" style={{width:'20%'}}>Fulfilled By</th>
             <th scope="col" style={{width:'10%'}}>Price</th>
             <th scope="col" style={{width:'10%'}}>Total Cart Items</th>
             </tr>

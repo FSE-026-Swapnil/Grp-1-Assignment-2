@@ -69,7 +69,7 @@ function Dashboard() {
     })
     .then((resp) => {
         //active ==> all accepted at rest
-        //pending ==> all accepted + all delivered - all placed at rest 
+        //pending ==> all placed at rest 
         //not delivered ==> all accepted - all completed at rest 
         if(resp.length > 0){
             resp.forEach((item) => {
@@ -82,8 +82,8 @@ function Dashboard() {
                     placedOrd += 1;
                 }
             })
-            setRestPendingOrders(restActiveOrd+deliveredOrd - placedOrd);
-            setUndelivrOrders(restActiveOrd - deliveredOrd);
+            setRestPendingOrders(placedOrd);
+            setUndelivrOrders(restActiveOrd-deliveredOrd);
         }
     });
   }
