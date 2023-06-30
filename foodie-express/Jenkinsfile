@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo "building stage started ..."
+                bat 'cd ./foodie-express/'
                 bat 'node -v' 
                 bat 'npm install' 
                 
